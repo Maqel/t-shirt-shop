@@ -1,0 +1,21 @@
+@use 'sass:math';
+@import '../../styles/settings.scss';
+@import '../../styles/components.scss';
+
+.choices {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    button {
+        @include button;
+
+        &.active {
+            opacity: 1;
+            transform: scale(1.2);
+            background: rgb(47, 53, 66);
+        }
+    }
+
+}
